@@ -69,7 +69,7 @@ public class LoginSteps {
 	public void user_should_login_succesfully() 
 	  {
 		//Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
-		lgn.AssertLogin();
+		Assert.assertTrue(lgn.AssertLogin());
 		 
 	   }
 
@@ -77,14 +77,15 @@ public class LoginSteps {
 	public void user_enter_invalid_email(String stringgg) 
 	
 	{
-		driver.findElement(By.xpath("//input[@class='form-control']")).sendKeys(stringgg);
+		lgn.enterUsername(stringgg);
+		//driver.findElement(By.xpath("//input[@class='form-control']")).sendKeys(stringgg);
 		
 	}
 
 	@And("user enter invalid password {string}")
 	public void user_enter_invalid_password(String stringgg) 
 	{
-		driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys(stringgg);
+		lgn.enterPassword(stringgg);
 		//System.out.println(" ==> User entered invalid password  succesfully ");
 		
 	}
@@ -93,8 +94,8 @@ public class LoginSteps {
 	public void user_should_not_login_succesfully() 
 	{
 		
-		Assert.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText().contains("Warning: No match for E-Mail Address and/or Password."));
-		
+		//Assert.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText().contains("Warning: No match for E-Mail Address and/or Password."));
+		Assert.assertTrue(lgn.AssertInvalidLogin());
 		/* WebElement notLogged = driver.findElement(By.xpath("//*[@id=\"account-login\"]/div[1]"));
 		String text_invalid = notLogged.getText();
 		System.out.println(text_invalid);

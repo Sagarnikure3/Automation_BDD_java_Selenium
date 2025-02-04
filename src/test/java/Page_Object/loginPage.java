@@ -15,7 +15,7 @@ public class loginPage {
 	}
 	
 	@FindBy(xpath = "//input[@class='form-control']")  // Locator for the username field
-   private WebElement emailField;
+    private WebElement emailField;
 
     @FindBy(xpath = "//input[@id='input-password']")  // Locator for the password field
     private WebElement passwordField;
@@ -32,6 +32,12 @@ public class loginPage {
 	@FindBy(linkText="Edit your account information")
 	private WebElement AssertLoginSMSField;
 	
+	@FindBy(xpath="//div[text()='Warning: No match for E-Mail Address and/or Password.']")
+    private WebElement InvalidLogin;
+	
+	//div[text()='Warning: No match for E-Mail Address and/or Password.']
+	
+	//*[contains(text(), "Warning: No match for E-Mail Address and/or Password.")]
 	
 	public void clickMYAccountButton() {
 	    MyAccountField.click(); }
@@ -53,12 +59,37 @@ public class loginPage {
     	submitButton.click();
     }
     
-    public void AssertLogin() {
-    	AssertLoginSMSField.isDisplayed();
+    public boolean AssertLogin() {
+    	
+    	
+    	return AssertLoginSMSField.isDisplayed();
+    	/*if (AssertLoginSMSField.isDisplayed()) 
+    	{
+    	return true;
+    	}
+    	else
+    	{
+    		return false;
+        }
+    */
+    
     }
     
+public boolean AssertInvalidLogin() {
+    	
+    	
+    	return InvalidLogin.isDisplayed();
+    	/*if (AssertLoginSMSField.isDisplayed()) 
+    	{
+    	return true;
+    	}
+    	else
+    	{
+    		return false;
+        }
+    */
     
-   
+    }
     
     
     
