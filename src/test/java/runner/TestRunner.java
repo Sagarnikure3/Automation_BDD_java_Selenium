@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		features=
 	{"src/test/resources/Features"},
 		glue={"stepdefinitions","Hooks"},
-		plugin = {"pretty","html:target/Cucumberreport.html"}, tags="@test1666666666666666")//tags can be a scenario, can be a feature file  , can be a all feature files
+		plugin = {"pretty","html:target/Cucumberreport.html"}, tags="@hh7777")//tags can be a scenario, can be a feature file  , can be a all feature files
 
 public class TestRunner {
 

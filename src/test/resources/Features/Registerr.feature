@@ -1,14 +1,14 @@
 
  Feature: Register funtionality 
-@hh
+@hh7777
  Scenario: Register with mandatory credential 
  Given User nevigate to registerr page
  When user enters below detail fields
-| Firstname         |sagarrrr                   |
-| LastName          |platforms                  |
-| Email             |sagarr0123777@gmail.com    |
-| Telephone         |4343434344                 |
-| Password          |nikurre123465              |
+| Firstname         |prince                   |
+| LastName          |kumar                    |
+| Email             |prince0123777@gmail.com    |
+| Telephone         |4455667788                 |
+| Password          |prince123465              |
 And select privecy policy field 
 And click on continue button 
 Then account should get succesfully created

@@ -5,6 +5,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,10 +20,10 @@ public  class myHooks {
 	       
 	{   
 		    driver = new ChromeDriver();
-		    driver.get("https://tutorialsninja.com/demo/");
 		    System.out.println("browser got open");
+		    driver.get("https://tutorialsninja.com/demo/");
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3)); 
+			driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS); 
 		
 	}
 	    
