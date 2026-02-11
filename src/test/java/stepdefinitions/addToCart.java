@@ -53,7 +53,7 @@ public class addToCart {
 			driver.findElement(By.xpath("/html/body/div[3]/div/div[1]/table/thead/tr[1]/th[3]")).click();
 			actualdate= driver.findElement(By.className("picker-switch")).getText();
 		}
-		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//td[text()='11']")).click();//cliking date 11
 		driver.findElement(By.xpath("//input[@name='quantity']")).sendKeys("4");//will select quetity
 		

@@ -67,7 +67,7 @@ import io.cucumber.java.en.When;
 	        public void account_should_get_succesfully_created()
 	        
 	   {
-		 
+		 String a="Your Account Has Been Created!";
 		 Assert.assertTrue(rgstrn.AssertRegistrationSuccessfull());
 	      
 	   }

@@ -26,7 +26,7 @@ public class registerPage {
 		@FindBy(xpath="//input[@name='confirm']") private WebElement ConfirmPassword;
 		@FindBy(xpath="//input[@name='agree']") private WebElement privecyPolicy;
 		@FindBy(xpath="//input[@type='submit']") private WebElement continew;
-		@FindBy(xpath="//*[@id=\\\"content\\\"]/h1") private WebElement AssertRegistration;
+		@FindBy(xpath="//h1[text()='Your Account Has Been Created!']") private WebElement AssertRegistration;
 		
 		public void clickOnMyAccount() {
 			myAccountField.click();

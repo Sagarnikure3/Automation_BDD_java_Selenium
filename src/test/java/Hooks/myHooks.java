@@ -23,17 +23,20 @@ public  class myHooks {
 		    System.out.println("browser got open");
 		    driver.get("https://tutorialsninja.com/demo/");
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS); 
+
+
+
+//			driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		
 	}
 	    
-	/*@After
+	@After
 	public void close ()
 	{
 		System.out.println("browser got closed");
 	driver.quit(); 
-		
-	}*/
+
+	}
 	
     public  static  WebDriver getDriver() {
              return driver  ;

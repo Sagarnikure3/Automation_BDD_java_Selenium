@@ -1,12 +1,12 @@
-
+@testp1
  Feature: Register funtionality 
-@hh7777
+@hh777788
  Scenario: Register with mandatory credential 
  Given User nevigate to registerr page
  When user enters below detail fields
-| Firstname         |prince                   |
+| Firstname         |nikk                   |
 | LastName          |kumar                    |
-| Email             |prince0123777@gmail.com    |
+| Email             |pbmo79977@gmail.com    |
 | Telephone         |4455667788                 |
 | Password          |prince123465              |
 And select privecy policy field 
@@ -19,7 +19,7 @@ Given User nevigate to registerr page
  When user enters below detail fields
 | Firstname |saggarr                       |
 | LastName  |nikuree                       |
-| Email     |niikurreeesagar11200@gmail.com|
+| Email     |nirreeehhksee771200@gmail.com|
 | Telephone |sagar123                      |
 | Password  |7228742031                    |
 And user select newsletter yes
@@ -33,7 +33,7 @@ Given User nevigate to registerr page
  When user enters below detail fields
 | Firstname |sagar                         |
 | LastName  |nikure                        |
-| Email     |niikurreeesagar11200@gmail.com|
+| Email     |pr0088o79977@gmail.com|
 | Telephone |Sagar@123                     |
 | Password  |7428742031                    |
 And user select newsletter yes
@@ -54,8 +54,8 @@ Then account should get proper warning massage
 @h
 Scenario: edit newly created account 
 Given User navigate to login page 
-When user enter valid email adress "sagarr0123777@gmail.com"
-And user enter valid password "nikurre123465"
+When user enter valid email adress "pbmo79977@gmail.com"
+And user enter valid password "prince123465"
 And click on login buttion 
 Then user should login succesfully
 Then user click on edit account field
@@ -67,8 +67,8 @@ Then newly created account should updated properly
 @w777
 Scenario: edit password and login again
 Given User navigate to login page 
-When user enter valid email adress "sagarr0123777@gmail.com"
-And user enter valid password "1234"
+When user enter valid email adress "pbmo79977@gmail.com"
+And user enter valid password "prince123465"
 And click on login buttion 
 Then user should login succesfully
 When user click on password field
