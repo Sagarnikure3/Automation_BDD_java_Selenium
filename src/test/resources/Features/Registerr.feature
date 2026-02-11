@@ -6,7 +6,7 @@
  When user enters below detail fields
 | Firstname         |nikk                   |
 | LastName          |kumar                    |
-| Email             |pbmo66666679977@gmail.com    |
+| Email             |pbmo6663333366679977@gmail.com    |
 | Telephone         |4455667788                 |
 | Password          |prince123465              |
 And select privecy policy field 
