@@ -13,6 +13,8 @@ public class loginPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	@FindBy(xpath = "//input[@class='form-control']")  // Locator for the username field
+	private WebElement emailField;//duplicate to below
 	
 	@FindBy(xpath = "//input[@class='form-control']")  // Locator for the username field
     private WebElement emailField;

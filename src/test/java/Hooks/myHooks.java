@@ -7,6 +7,7 @@ import io.cucumber.java.Before;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
    
@@ -18,7 +19,7 @@ public  class myHooks {
 	@Before
 	public void setup ()
 	       
-	{   
+	{      WebDriverManager.chromedriver().setup();
 		    driver = new ChromeDriver();
 		    System.out.println("browser got open");
 		    driver.get("https://tutorialsninja.com/demo/");
