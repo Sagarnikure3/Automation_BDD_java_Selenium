@@ -1,4 +1,4 @@
-@all
+@testp1
 Feature: Search funtionality
 
 Scenario: Search with valid  product 

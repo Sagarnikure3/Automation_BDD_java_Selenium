@@ -14,8 +14,8 @@ public class loginPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-//	@FindBy(xpath = "//input[@class='form-control']")  // Locator for the username field
-//    private WebElement emailField;
+	@FindBy(xpath = "//input[@class='form-control33']")  // Locator for the username field
+    private WebElement emailField;
 
     @FindBy(xpath = "//input[@id='input-password']")  // Locator for the password field
     private WebElement passwordField;
